@@ -18,6 +18,15 @@ jobs:
         with:
           node-version: 16.x
 
+    # npm install の際にキャッシュを使うよう設定
+    - name: Cache dependencies
+      uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
       - name: Install NPM packages
         run: npm ci
 
@@ -28,6 +37,12 @@ jobs:
 
       - name: Export me
         run: npm run export
+
+    # GitHub Pagesの仕様として_から始まるディレクトリが見えず404となる
+    # つまりHTMLからJSを読み込めない
+    # これを回避するために.nojekyllファイルをoutディレクトリに作る
+    - name: add nojekyll
+      run: touch ./out/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
