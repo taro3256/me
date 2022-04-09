@@ -24,7 +24,7 @@ jobs:
       - name: Build me
         run: npm run build
         env:
-          URL_PREFIX: myapp
+          URL_PREFIX: taro3256
 
       - name: Export me
         run: npm run export
