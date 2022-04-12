@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import { useState } from 'react'
-import Image from 'next/image'
 import { CgCoffee } from "react-icons/cg"
 import { CgDice6 } from "react-icons/cg"
 
@@ -15,7 +14,7 @@ const Shacre: NextPage = () => {
     <>
       <div className='wrapper'>
         <div className='title'>
-          <Image src='/imgs/logo.png' alt='SHA:CRE' width='250' height='60'/>
+          <img src='/imgs/logo.png' alt='SHA:CRE' width='250' height='60'/>
         </div>
 
         <div>
