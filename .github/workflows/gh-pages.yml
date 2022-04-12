@@ -28,7 +28,9 @@ jobs:
 
      # ビルドする
      - name: Build
-       run: yarn build
+       run: |
+        yarn build
+        touch out/.nojekyll
 
      # GitHub Pages にデプロイする
      - name: Deploy
