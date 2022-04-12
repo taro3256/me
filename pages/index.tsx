@@ -45,9 +45,7 @@ const Shacre: NextPage = () => {
             tab === 'cafe' &&
             <div className='contents' id='cafe-content'>
               <div className='contents_title'>メニュー</div>
-              <div className='card'>
                 <div>ホットサンド</div>
-              </div>
             </div>
           }
 
@@ -72,9 +70,11 @@ const Shacre: NextPage = () => {
                     <div className='card_contents'>4</div>
                   </div>
                 </div>
-                リアルタイム更新ではありません！（できるだけ頑張ります！）<br />
-                席数があまり多くないので、ご来店前に予約していただけると確実です。<br />
-                ご予約の際はLINEやInstagramからご連絡ください
+                <div>
+                  リアルタイム更新ではありません！（できるだけ頑張ります！）<br />
+                  席数が少ないので、ご来店前に予約していただけると確実です。<br />
+                  ご予約の際はLINEやInstagramからご連絡ください。
+                </div>
               </div>
 
               {/* 料金 */}
@@ -82,7 +82,7 @@ const Shacre: NextPage = () => {
                 <div className='contents_title'>料金</div>
                 <div className='use_pricing_table'>
                   <div className='card'>
-                    <div className='card_title'>基本（1人）</div>
+                    <div className='card_title'>基本(1人)・ 延長</div>
                     <div className='card_contents'>¥400 / 1h</div>
                     <div className='card_sub'>
                       ※1ドリンクオーダー制<br />
@@ -90,16 +90,18 @@ const Shacre: NextPage = () => {
                     </div>
                   </div>
                   <div className='card'>
-                    <div className='card_title'>フリータイム（1人）</div>
+                    <div className='card_title'>パック(1人)</div>
                     <div className='card_contents'>
-                      11~22時 ¥2,000
+                      4時間 : ¥1,200<br />
+                      フリー : ¥2,000
                     </div>
                     <div className='card_sub'>
                     </div>
                   </div>
                 </div>
                 <div>
-                  どちらも持ち込み可です！（酒類は除く）
+                  どちらも持ち込み可です！（酒類は除く）<br />
+                  営業時間は11:00~22:00となっています。
                 </div>
               </div>
 
