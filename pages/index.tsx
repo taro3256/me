@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import { useState } from 'react'
-import { CgCoffee } from "react-icons/cg"
-import { CgDice6 } from "react-icons/cg"
+import { CgCoffee, CgDice6 } from "react-icons/cg"
 
 const Shacre: NextPage = () => {
   const [tab, setTab] = useState('')
@@ -45,7 +44,75 @@ const Shacre: NextPage = () => {
             tab === 'cafe' &&
             <div className='contents' id='cafe-content'>
               <div className='contents_title'>メニュー</div>
-                <div>ホットサンド</div>
+                <div className='menu_list'>
+                  <dl className='menu'>
+                    FOODS
+                    <div>
+                      <dt>ホットサンド（ハムチーズエッグ）</dt>
+                      <dd>&yen;400</dd>
+                    </div>
+                    <div>
+                      <dt>ホットサンド（アボカドエビマヨ）</dt>
+                      <dd>&yen;450</dd>
+                    </div>
+                    <div>
+                      <dt>ホットサンド（あんこバター）</dt>
+                      <dd>&yen;450</dd>
+                    </div>
+                    <div>
+                      <dt>サンドイッチ（ハムエッグ）</dt>
+                      <dd>&yen;400</dd>
+                    </div>
+                  </dl>
+                  <dl className='menu'>
+                    DRINKS
+                    <div>
+                      <dt>コーヒー（中煎り、Hot）</dt>
+                      <dd>&yen;500</dd>
+                    </div>
+                    <div>
+                      <dt>コーヒー（中深煎り、Hot）</dt>
+                      <dd>&yen;500</dd>
+                    </div>
+                    <div>
+                      <dt>コーヒー（深煎り、Hot）</dt>
+                      <dd>&yen;500</dd>
+                    </div>
+                    <div>
+                      <dt>アイスコーヒー</dt>
+                      <dd>&yen;500</dd>
+                    </div>
+                    <div>
+                      <dt>紅茶（Hot）</dt>
+                      <dd>&yen;400</dd>
+                    </div>
+                    <div>
+                      <dt>アイスティー</dt>
+                      <dd>&yen;400</dd>
+                    </div>
+                    <div>
+                      <dt>ウーロン茶</dt>
+                      <dd>&yen;400</dd>
+                    </div>
+                    <div>
+                      <dt>カルピス</dt>
+                      <dd>&yen;400</dd>
+                    </div>
+                    <div>
+                      <dt>カルピスソーダ</dt>
+                      <dd>&yen;400</dd>
+                    </div>
+                    <div>
+                      <dt>メロンソーダ</dt>
+                      <dd>&yen;400</dd>
+                    </div>
+                    <div>
+                      <dt>クランベリーソーダ</dt>
+                      <dd>&yen;400</dd>
+                    </div>
+                  </dl>
+                </div>
+                ※値段は全て税込価格です。
             </div>
           }
 
@@ -216,6 +283,44 @@ const Shacre: NextPage = () => {
         .tab_text {
           font-size: 20px;
           font-weight: bold;
+        }
+        .menu_list {
+          display: flex;
+        }
+        .menu {
+          width: 100%;
+          padding: 5%;
+          font-size: 1rem;
+        }
+        .menu div {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          margin: 5px 0;
+          padding: 5px 0;
+        }
+        .menu div::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 50%;
+          z-index: 1;
+          width: 100%;
+          border-bottom: dotted 1px #fff;
+        }
+        .menu dt{
+          margin:0;
+          padding: 0 5px 0 0;
+          z-index: 2;
+          text-align: left;
+          background-color: #666;
+          }
+        .menu dd{
+          margin:0;
+          padding: 0 0 0 5px;
+          z-index: 2;
+          text-align: right;
+          background-color: #666;
         }
         .seat_status {
           display: flex;
