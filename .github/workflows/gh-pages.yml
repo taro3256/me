@@ -28,8 +28,12 @@ jobs:
 
      # ビルドする
      - name: Build
+       run: yarn build
+
+    # エキスポートする
+     - name: Export
        run: |
-        yarn build
+        yarn export
         touch .nojekyll
 
      # GitHub Pages にデプロイする
