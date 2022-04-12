@@ -34,7 +34,7 @@ jobs:
      - name: Export
        run: |
         yarn export
-        touch .nojekyll
+        touch out/.nojekyll
 
      # GitHub Pages にデプロイする
      - name: Deploy
