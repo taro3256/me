@@ -254,7 +254,7 @@ const Shacre: NextPage = () => {
         .tabs input:checked + .tab_label {
           background-color: #E6B8AF;
           color: #000;
-          box-shadow: 1px 2px #000;
+          box-shadow: 0 2px #000;
         }
         input[name="tab"] {
           display: none;
@@ -364,17 +364,16 @@ const Shacre: NextPage = () => {
           background-color: #666;
         }
         .contents_title {
-          font-size: 40px;
+          font-size: 25px;
           margin-top: 50px;
-          background: #333;
-          box-shadow: 1px 2px #000;
+          box-shadow: 0 1px #fff;
         }
         .card {
           width: 100%;
           padding: 10px;
           margin: 20px 10px;
           background-color: #E6B8AF;
-          box-shadow: 1px 2px #000;
+          box-shadow: 0px 2px #000;
           color: #000;
           font-size: 20px;
         }
