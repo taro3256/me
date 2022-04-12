@@ -30,7 +30,7 @@ jobs:
      - name: Build
        run: |
         yarn build
-        touch me/out/.nojekyll
+        touch .nojekyll
 
      # GitHub Pages にデプロイする
      - name: Deploy
