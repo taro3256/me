@@ -14,13 +14,14 @@ const Shacre: NextPage = () => {
     <>
       <div className='wrapper'>
         <div className='title'>
-          <img src='/imgs/logo.png' alt='SHA:CRE' width='250' height='60'/>
+          <img className='logo' src='/imgs/logo.png' alt='SHA:CRE' width='250' height='60'/>
         </div>
 
-        <div>
-          〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br />
-          この辺でお店のことちょっと語る<br />
-          〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜
+        <div className='introduction'>
+          「シャ：クレ」はお客様がコーヒーを飲みに来て、お店で初めて会った人と気軽にボードゲームで遊んでいく。
+          そんな雰囲気を目指しております。
+          もちろん、ご家族やカップル、学校の同級生等でのご来店も大歓迎です。
+          まずはコーヒーだけでもいかがでしょうか？
         </div>
 
         <div className='tabs'>
@@ -71,7 +72,9 @@ const Shacre: NextPage = () => {
                     <div className='card_contents'>4</div>
                   </div>
                 </div>
-                リアルタイムではありません！
+                リアルタイム更新ではありません！（できるだけ頑張ります！）<br />
+                席数があまり多くないので、ご来店前に予約していただけると確実です。<br />
+                ご予約の際はLINEやInstagramからご連絡ください
               </div>
 
               {/* 料金 */}
@@ -82,23 +85,21 @@ const Shacre: NextPage = () => {
                     <div className='card_title'>基本（1人）</div>
                     <div className='card_contents'>¥400 / 1h</div>
                     <div className='card_sub'>
-                      ※1ドリンクオーダー制
+                      ※1ドリンクオーダー制<br />
+                      （カフェ利用後であれば不要）
                     </div>
                   </div>
                   <div className='card'>
                     <div className='card_title'>フリータイム（1人）</div>
                     <div className='card_contents'>
-                      昼(11~18h) ¥2000<br />
-                      夜(18~22h) ¥1500
+                      11~22時 ¥2,000
                     </div>
                     <div className='card_sub'>
-                      ※1ドリンク付き
                     </div>
                   </div>
                 </div>
                 <div>
-                  どちらも持ち込み可です！（酒類は除く）<br />
-                  ※相席不可の場合総額 + ¥100 / 人
+                  どちらも持ち込み可です！（酒類は除く）
                 </div>
               </div>
 
@@ -146,8 +147,16 @@ const Shacre: NextPage = () => {
           background-color: #666;
           color: #fff;
         }
+        .logo {
+          margin: 30px 0;
+        }
         .title {
           padding: 20px 0;
+        }
+        .introduction {
+          max-width: 500px;
+          margin: 0 auto;
+          text-align: left;
         }
         .tabs {
           min-height: 320px;
@@ -280,6 +289,10 @@ const Shacre: NextPage = () => {
           padding: 8px 8px 0 24px;
         }
         @media screen and (max-width:480px) {
+          .introduction {
+            max-width: 300px;
+            font-size: 14px;
+          }
           .contents_title {
             font-size: 20px;
           }
