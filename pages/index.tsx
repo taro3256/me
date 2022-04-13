@@ -67,15 +67,15 @@ const Shacre: NextPage = () => {
                   <dl className='menu'>
                     DRINKS
                     <div>
-                      <dt>コーヒー（中煎り、Hot）</dt>
+                      <dt>ドリップコーヒー（中煎り、Hot）</dt>
                       <dd>&yen;500</dd>
                     </div>
                     <div>
-                      <dt>コーヒー（中深煎り、Hot）</dt>
+                      <dt>ドリップコーヒー（中深煎り、Hot）</dt>
                       <dd>&yen;500</dd>
                     </div>
                     <div>
-                      <dt>コーヒー（深煎り、Hot）</dt>
+                      <dt>ドリップコーヒー（深煎り、Hot）</dt>
                       <dd>&yen;500</dd>
                     </div>
                     <div>
@@ -159,7 +159,7 @@ const Shacre: NextPage = () => {
                   <div className='card'>
                     <div className='card_title'>パック(1人)</div>
                     <div className='card_contents'>
-                      4時間 : ¥1,200<br />
+                      ３時間 : ¥1,000<br />
                       フリー : ¥2,000
                     </div>
                     <div className='card_sub'>
