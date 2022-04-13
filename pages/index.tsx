@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import { useState } from 'react'
 import { CgCoffee, CgDice6 } from "react-icons/cg"
+import { CSSTransition } from "react-transition-group";
 
 const Shacre: NextPage = () => {
   const [tab, setTab] = useState('')
@@ -40,8 +41,12 @@ const Shacre: NextPage = () => {
           </label>
 
           {/* カフェのコンテンツ */}
-          {
-            tab === 'cafe' &&
+          <CSSTransition
+            classNames="contents"
+            in={tab === 'cafe'}
+            timeout={700}
+            unmountOnExit
+          >
             <div className='contents' id='cafe-content'>
               <div className='contents_title'>メニュー</div>
                 <div className='menu_list'>
@@ -114,11 +119,15 @@ const Shacre: NextPage = () => {
                 </div>
                 ※値段は全て税込価格です。
             </div>
-          }
+          </CSSTransition>
 
           {/* ボードゲームのコンテンツ */}
-          {
-            tab === 'boardgame' &&
+          <CSSTransition
+            classNames="contents"
+            in={tab === 'boardgame'}
+            timeout={700}
+            unmountOnExit
+          >
             <div className='contents' id='boardgame-content'>
               {/* 利用状況 */}
               <div>
@@ -189,7 +198,7 @@ const Shacre: NextPage = () => {
                 coming soon...
               </div>
             </div>
-          }
+          </CSSTransition>
         </div>
 
         <div className='footer'>
@@ -259,19 +268,17 @@ const Shacre: NextPage = () => {
         input[name="tab"] {
           display: none;
         }
-        /* タブ切り替えの中身のスタイル */
-        .contents {
-          clear: both;
-          animation-name: fade;
-          animation-duration: 0.5s;
+        .contents-enter {
+          opacity: 0;
+          transform: scale(0.9);
         }
-        @keyframes fade{
-          0% {
-            opacity: 0;
-          }
-          100% {
-            opacity: 1;
-          }
+        .contents-enter-active {
+          opacity: 1;
+          transform: translateX(0);
+          transition: opacity 0.5s, transform 0.5s;
+        }
+        .contents-exit {
+          display: none;
         }
         /* 選択されているタブのスタイルを変える */
         .tabs input:checked + .tab_item {
