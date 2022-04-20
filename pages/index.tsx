@@ -72,15 +72,15 @@ const Shacre: NextPage = () => {
                   <dl className='menu'>
                     DRINKS
                     <div>
-                      <dt>ドリップコーヒー（中煎り、Hot）</dt>
+                      <dt>ドリップコーヒー（フルーティ）</dt>
                       <dd>&yen;500</dd>
                     </div>
                     <div>
-                      <dt>ドリップコーヒー（中深煎り、Hot）</dt>
+                      <dt>ドリップコーヒー（バランス）</dt>
                       <dd>&yen;500</dd>
                     </div>
                     <div>
-                      <dt>ドリップコーヒー（深煎り、Hot）</dt>
+                      <dt>ドリップコーヒー（ビター）</dt>
                       <dd>&yen;500</dd>
                     </div>
                     <div>
@@ -111,13 +111,10 @@ const Shacre: NextPage = () => {
                       <dt>メロンソーダ</dt>
                       <dd>&yen;400</dd>
                     </div>
-                    <div>
-                      <dt>クランベリーソーダ</dt>
-                      <dd>&yen;400</dd>
-                    </div>
                   </dl>
                 </div>
-                ※値段は全て税込価格です。
+                ※値段は全て税込価格です。<br />
+                ※ボードゲーム利用で2杯目以降200円引き
             </div>
           </CSSTransition>
 
@@ -159,25 +156,26 @@ const Shacre: NextPage = () => {
                 <div className='use_pricing_table'>
                   <div className='card'>
                     <div className='card_title'>基本(1人)・ 延長</div>
-                    <div className='card_contents'>¥400 / 1h</div>
+                    <div className='card_contents'>¥200 / 30分</div>
                     <div className='card_sub'>
-                      ※1ドリンクオーダー制<br />
-                      （カフェ利用後であれば不要）
+
                     </div>
                   </div>
                   <div className='card'>
                     <div className='card_title'>パック(1人)</div>
                     <div className='card_contents'>
-                      ３時間 : ¥1,000<br />
-                      フリー : ¥2,000
+                      ３時間まで: ¥1,000<br />
+                      ８時間まで: ¥2,500<br />
                     </div>
                     <div className='card_sub'>
+                      ※自動で適用されます。
                     </div>
                   </div>
                 </div>
                 <div>
-                  どちらも持ち込み可です！（酒類は除く）<br />
-                  営業時間は11:00~22:00となっています。
+                  ※持ち込みは不可です！<br />
+                  ※自動更新、後払いとなっております！<br />
+                  ※カフェで1000円以上利用で無料1時間追加！<br />
                 </div>
               </div>
 
@@ -209,6 +207,13 @@ const Shacre: NextPage = () => {
             <div className='shop_info_block'>
               <div className='shop_info_title'>所在地</div>
               <div className='shop_info_contents'>神奈川県 小田原市 南鴨宮3-9-7</div>
+            </div>
+            <div className='shop_info_block'>
+              <div className='shop_info_title'>営業時間</div>
+              <div className='shop_info_contents'>
+                カフェ　　　：11:00~21:00<br />
+                ボードゲーム：11:00~22:00
+              </div>
             </div>
             <div className='shop_info_block'>
               <div className='shop_info_title'>SNS</div>
@@ -293,9 +298,10 @@ const Shacre: NextPage = () => {
         }
         .menu_list {
           display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
         }
         .menu {
-          width: 100%;
           padding: 5%;
           font-size: 1rem;
         }
