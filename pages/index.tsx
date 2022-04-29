@@ -84,15 +84,15 @@ const Shacre: NextPage = () => {
                       <dd>&yen;500</dd>
                     </div>
                     <div>
-                      <dt>アイスコーヒー</dt>
-                      <dd>&yen;500</dd>
-                    </div>
-                    <div>
-                      <dt>紅茶（Hot）</dt>
+                      <dt>普通のアイスコーヒー</dt>
                       <dd>&yen;400</dd>
                     </div>
                     <div>
-                      <dt>アイスティー</dt>
+                      <dt>紅茶（Hot）</dt>
+                      <dd>&yen;500</dd>
+                    </div>
+                    <div>
+                      <dt>普通のアイスティー</dt>
                       <dd>&yen;400</dd>
                     </div>
                     <div>
@@ -145,8 +145,8 @@ const Shacre: NextPage = () => {
                 </div>
                 <div>
                   リアルタイム更新ではありません！（できるだけ頑張ります！）<br />
-                  席数が少ないので、ご来店前に予約していただけると確実です。<br />
-                  ご予約の際はLINEやInstagramからご連絡ください。
+                  LINEやInstagramで連絡していただければ、正確な席状況をお伝えできます。<br />
+                  また、席数が少ないので、ご来店前にLINEやInstagram等で予約していただけると確実です。<br />
                 </div>
               </div>
 
@@ -158,7 +158,7 @@ const Shacre: NextPage = () => {
                     <div className='card_title'>基本(1人)・ 延長</div>
                     <div className='card_contents'>¥200 / 30分</div>
                     <div className='card_sub'>
-
+                      ※最低1時間からご利用可能です。
                     </div>
                   </div>
                   <div className='card'>
@@ -175,7 +175,7 @@ const Shacre: NextPage = () => {
                 <div>
                   ※持ち込みは不可です！<br />
                   ※自動更新、後払いとなっております！<br />
-                  ※カフェで1000円以上利用で無料1時間追加！<br />
+                  ※カフェで1000円以上利用で1時間無料追加！<br />
                 </div>
               </div>
 
@@ -363,7 +363,7 @@ const Shacre: NextPage = () => {
           width: 100%;
           background-color: #333;
           color: #fff;
-          padding: 20px;
+          padding: 20px 10%;
         }
         .shop_info {
           width: 100%;
