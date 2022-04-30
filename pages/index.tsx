@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Head from 'next/head';
 import { useState } from 'react'
 import { CgCoffee, CgDice6 } from "react-icons/cg"
 import { CSSTransition } from "react-transition-group";
@@ -12,6 +13,10 @@ const Shacre: NextPage = () => {
 
   return (
     <>
+      <Head>
+        <title>シャ：クレ</title>
+        <meta name="google-site-verification" content="FzxFzCFymJkcbBfAhEFwGzvhPkTpqD26WOSfHNZtW88" />
+      </Head>
       <div className='wrapper'>
         <div className='title'>
           <img className='logo' src='/imgs/logo.png' alt='SHA:CRE' width='250' height='60'/>
