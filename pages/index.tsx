@@ -62,15 +62,27 @@ const Shacre: NextPage = () => {
                       <dd>&yen;400</dd>
                     </div>
                     <div>
-                      <dt>ホットサンド（アボカドエビマヨ）</dt>
-                      <dd>&yen;450</dd>
+                      <dt>ホットサンド（きのこピザ）</dt>
+                      <dd>&yen;500</dd>
+                    </div>
+                    <div>
+                      <dt>ホットサンド（アビアボカド）</dt>
+                      <dd>&yen;500</dd>
                     </div>
                     <div>
                       <dt>ホットサンド（あんこバター）</dt>
-                      <dd>&yen;450</dd>
+                      <dd>&yen;500</dd>
                     </div>
                     <div>
                       <dt>サンドイッチ（ハムエッグ）</dt>
+                      <dd>&yen;400</dd>
+                    </div>
+                    <div>
+                      <dt>サラダ</dt>
+                      <dd>&yen;400</dd>
+                    </div>
+                    <div>
+                      <dt>甘いもの</dt>
                       <dd>&yen;400</dd>
                     </div>
                   </dl>
@@ -91,6 +103,10 @@ const Shacre: NextPage = () => {
                     <div>
                       <dt>普通のアイスコーヒー</dt>
                       <dd>&yen;400</dd>
+                    </div>
+                    <div>
+                      <dt>フレーバーティー（Hot）</dt>
+                      <dd>&yen;500</dd>
                     </div>
                     <div>
                       <dt>紅茶（Hot）</dt>
