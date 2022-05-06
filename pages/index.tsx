@@ -210,7 +210,7 @@ const Shacre: NextPage = () => {
 
         <div className='footer'>
           <div className='map'>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.2199228287423!2d139.17783731524773!3d35.27565798029089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019a5bcdead0b6d%3A0xccaf6c0c716d30d0!2z6bSo5a6u6aeF!5e0!3m2!1sja!2sjp!4v1649087869459!5m2!1sja!2sjp" width="500" height="450" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.295127607355!2d139.17670011524777!3d35.27378788029131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019a5085dba5525%3A0xeb1bee4a8c4057cf!2z6aKo6Iqx!5e0!3m2!1sja!2sjp!4v1651862497161!5m2!1sja!2sjp" width="500" height="450"loading="lazy"></iframe>
           </div>
           <div className='shop_info'>
             <div className='shop_info_block'>
