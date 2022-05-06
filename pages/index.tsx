@@ -19,7 +19,7 @@ const Shacre: NextPage = () => {
       </Head>
       <div className='wrapper'>
         <div className='title'>
-          <img className='logo' src='/imgs/logo.png' alt='SHA:CRE' width='250' height='60'/>
+          <img className='logo' src='/imgs/logo.png' alt='SHA:CRE（シャ：クレ）' width='250' height='60'/>
         </div>
 
         <div className='introduction'>
@@ -59,27 +59,15 @@ const Shacre: NextPage = () => {
                     FOODS
                     <div>
                       <dt>ホットサンド（ハムチーズエッグ）</dt>
-                      <dd>&yen;400</dd>
+                      <dd>&yen;500</dd>
                     </div>
                     <div>
                       <dt>ホットサンド（きのこピザ）</dt>
-                      <dd>&yen;500</dd>
-                    </div>
-                    <div>
-                      <dt>ホットサンド（アビアボカド）</dt>
-                      <dd>&yen;500</dd>
+                      <dd>&yen;600</dd>
                     </div>
                     <div>
                       <dt>ホットサンド（あんこバター）</dt>
-                      <dd>&yen;500</dd>
-                    </div>
-                    <div>
-                      <dt>サンドイッチ（ハムエッグ）</dt>
-                      <dd>&yen;400</dd>
-                    </div>
-                    <div>
-                      <dt>サラダ</dt>
-                      <dd>&yen;400</dd>
+                      <dd>&yen;600</dd>
                     </div>
                     <div>
                       <dt>甘いもの</dt>
@@ -135,7 +123,7 @@ const Shacre: NextPage = () => {
                   </dl>
                 </div>
                 ※値段は全て税込価格です。<br />
-                ※ボードゲーム利用で2杯目以降200円引き
+                ※ボードゲーム利用で2杯目以降200円引き（ドリップコーヒーを除く）
             </div>
           </CSSTransition>
 
@@ -153,15 +141,15 @@ const Shacre: NextPage = () => {
                 <div className='seat_status'>
                   <div className='card'>
                     <div className='card_title'>空席</div>
-                    <div className='card_contents'>8 / 12</div>
+                    <div className='card_contents'>準備中</div>
                   </div>
                   <div className='card'>
                     <div className='card_title'>利用中</div>
-                    <div className='card_contents'>4</div>
+                    <div className='card_contents'>準備中</div>
                   </div>
                   <div className='card'>
                     <div className='card_title'>相席中</div>
-                    <div className='card_contents'>4</div>
+                    <div className='card_contents'>準備中</div>
                   </div>
                 </div>
                 <div>
@@ -186,7 +174,7 @@ const Shacre: NextPage = () => {
                     <div className='card_title'>パック(1人)</div>
                     <div className='card_contents'>
                       ３時間まで: ¥1,000<br />
-                      ８時間まで: ¥2,500<br />
+                      ８時間まで: ¥2,300<br />
                     </div>
                     <div className='card_sub'>
                       ※自動で適用されます。
