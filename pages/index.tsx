@@ -221,18 +221,35 @@ const Shacre: NextPage = () => {
           <div className='shop_info'>
             <div className='shop_info_block'>
               <div className='shop_info_title'>所在地</div>
-              <div className='shop_info_contents'>神奈川県 小田原市 南鴨宮3-9-7</div>
+              <div className='shop_info_contents'>
+                <div className='left_text'>
+                  神奈川県 小田原市 南鴨宮3-9-7<br />
+                  「風花」を間借りして営業しています。<br />
+                  駐車場2台まで。
+                </div>
+              </div>
             </div>
             <div className='shop_info_block'>
               <div className='shop_info_title'>営業時間</div>
               <div className='shop_info_contents'>
-                カフェ　　　：11:00~21:00<br />
-                ボードゲーム：11:00~22:00
+                <div className='left_text'>
+                  カフェ　　　：11:00~22:00（L.O. 21:00）<br />
+                  ボードゲーム：11:00~22:00
+                </div>
               </div>
             </div>
             <div className='shop_info_block'>
-              <div className='shop_info_title'>SNS</div>
-              <div className='shop_info_contents'></div>
+              <div className='shop_info_title'>SNS・LINE</div>
+              <div className='shop_info_contents'>
+                <div className='left_text'>
+                  【Twitter】<br />
+                  <a className='account_link' href="https://twitter.com/sha_cre_cafe">https://twitter.com/sha_cre_cafe</a><br />
+                  【Instagram】<br />
+                  <a className='account_link' href="https://www.instagram.com/sha_cre_cafe/">https://www.instagram.com/sha_cre_cafe/</a><br />
+                  【LINE】<br />
+                  <a className='account_link' href="https://lin.ee/ejQph0V">https://lin.ee/ejQph0V</a><br />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -390,6 +407,13 @@ const Shacre: NextPage = () => {
         }
         .shop_info_title {
           background-color: #666;
+        }
+        .left_text {
+          text-align: left;
+          padding-left: 3%;
+        }
+        .account_link {
+          color: skyblue;
         }
         .contents_title {
           font-size: 25px;
