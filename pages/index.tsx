@@ -58,6 +58,10 @@ const Shacre: NextPage = () => {
                   <dl className='menu'>
                     FOODS
                     <div>
+                      <dt>生パスタ</dt>
+                      <dd>&yen;900</dd>
+                    </div>
+                    <div>
                       <dt>ホットサンド（ハムチーズエッグ）</dt>
                       <dd>&yen;500</dd>
                     </div>
@@ -164,17 +168,20 @@ const Shacre: NextPage = () => {
                 <div className='contents_title'>料金</div>
                 <div className='use_pricing_table'>
                   <div className='card'>
-                    <div className='card_title'>基本(1人)・ 延長</div>
-                    <div className='card_contents'>¥200 / 30分</div>
+                    <div className='card_title'>基本</div>
+                    <div className='card_contents'>
+                      場所代　: ¥300<br />
+                      ３０分毎: ¥200
+                    </div>
                     <div className='card_sub'>
-                      ※最低1時間からご利用可能です。
+                      ※LINE会員の方は場所代0円<br />
                     </div>
                   </div>
                   <div className='card'>
                     <div className='card_title'>パック(1人)</div>
                     <div className='card_contents'>
                       ３時間まで: ¥1,000<br />
-                      ８時間まで: ¥2,300<br />
+                      ７時間まで: ¥2,000<br />
                     </div>
                     <div className='card_sub'>
                       ※自動で適用されます。
@@ -183,8 +190,7 @@ const Shacre: NextPage = () => {
                 </div>
                 <div>
                   ※持ち込みは不可です！<br />
-                  ※自動更新、後払いとなっております！<br />
-                  ※カフェで1000円以上利用で1時間無料追加！<br />
+                  ※カフェで1000円以上利用で1時間無料追加<br />
                 </div>
               </div>
 
