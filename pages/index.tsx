@@ -189,7 +189,6 @@ const Shacre: NextPage = () => {
                   </div>
                 </div>
                 <div>
-                  ※持ち込みは不可です！<br />
                   ※カフェで1000円以上利用で1時間無料追加<br />
                 </div>
               </div>
