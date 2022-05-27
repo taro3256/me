@@ -58,7 +58,7 @@ const Shacre: NextPage = () => {
                   <dl className='menu'>
                     FOODS
                     <div>
-                      <dt>生パスタ</dt>
+                      <dt>月替わり生パスタ</dt>
                       <dd>&yen;900</dd>
                     </div>
                     <div>
@@ -74,8 +74,20 @@ const Shacre: NextPage = () => {
                       <dd>&yen;600</dd>
                     </div>
                     <div>
-                      <dt>甘いもの</dt>
-                      <dd>&yen;400</dd>
+                      <dt>バニラアイス</dt>
+                      <dd>&yen;200</dd>
+                    </div>
+                    <div>
+                      <dt>コーヒーゼリー</dt>
+                      <dd>&yen;200</dd>
+                    </div>
+                    <div>
+                      <dt>トッピング（黒蜜きなこ）</dt>
+                      <dd>&yen;100</dd>
+                    </div>
+                    <div>
+                      <dt>トッピング（あんこ）</dt>
+                      <dd>&yen;200</dd>
                     </div>
                   </dl>
                   <dl className='menu'>
@@ -122,6 +134,14 @@ const Shacre: NextPage = () => {
                     </div>
                     <div>
                       <dt>メロンソーダ</dt>
+                      <dd>&yen;400</dd>
+                    </div>
+                    <div>
+                      <dt>ティーソーダ</dt>
+                      <dd>&yen;400</dd>
+                    </div>
+                    <div>
+                      <dt>コーヒーソーダ</dt>
                       <dd>&yen;400</dd>
                     </div>
                   </dl>
