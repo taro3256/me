@@ -252,7 +252,9 @@ const Shacre: NextPage = () => {
             <div className='shop_info_block'>
               <div className='shop_info_title'>駐車場</div>
               <div className='shop_info_contents'>
-                <img className='parking' src='/imgs/parking.png' alt='駐車場' width='100%'/>
+                <a href="/imgs/parking.png">
+                  <img className='parking' src='/imgs/parking.png' alt='駐車場' width='100%'/>
+                </a>
               </div>
             </div>
 
