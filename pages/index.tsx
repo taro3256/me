@@ -229,6 +229,14 @@ const Shacre: NextPage = () => {
                 </div>
               </div>
             </div>
+
+            <div className='shop_info_block'>
+              <div className='shop_info_title'>駐車場</div>
+              <div className='shop_info_contents'>
+                <img className='parking' src='/imgs/parking.png' alt='駐車場' width='100%'/>
+              </div>
+            </div>
+
             <div className='shop_info_block'>
               <div className='shop_info_title'>営業時間</div>
               <div className='shop_info_contents'>
@@ -238,6 +246,7 @@ const Shacre: NextPage = () => {
                 </div>
               </div>
             </div>
+
             <div className='shop_info_block'>
               <div className='shop_info_title'>SNS・LINE</div>
               <div className='shop_info_contents'>
@@ -445,6 +454,9 @@ const Shacre: NextPage = () => {
           min-height: 56px;
           text-align: left;
           padding: 8px 8px 0 24px;
+        }
+        .parking {
+          padding: 5px;
         }
         @media screen and (max-width:480px) {
           .introduction {
