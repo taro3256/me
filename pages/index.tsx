@@ -121,10 +121,6 @@ const Shacre: NextPage = () => {
                       <dd>&yen;400</dd>
                     </div>
                     <div>
-                      <dt>メロンソーダ</dt>
-                      <dd>&yen;400</dd>
-                    </div>
-                    <div>
                       <dt>コーヒーソーダ</dt>
                       <dd>&yen;400</dd>
                     </div>
