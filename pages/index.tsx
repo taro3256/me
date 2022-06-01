@@ -62,18 +62,6 @@ const Shacre: NextPage = () => {
                       <dd>&yen;900</dd>
                     </div>
                     <div>
-                      <dt>ホットサンド（ハムチーズエッグ）</dt>
-                      <dd>&yen;500</dd>
-                    </div>
-                    <div>
-                      <dt>ホットサンド（きのこピザ）</dt>
-                      <dd>&yen;600</dd>
-                    </div>
-                    <div>
-                      <dt>ホットサンド（あんこバター）</dt>
-                      <dd>&yen;600</dd>
-                    </div>
-                    <div>
                       <dt>バニラアイス</dt>
                       <dd>&yen;200</dd>
                     </div>
@@ -137,17 +125,12 @@ const Shacre: NextPage = () => {
                       <dd>&yen;400</dd>
                     </div>
                     <div>
-                      <dt>ティーソーダ</dt>
-                      <dd>&yen;400</dd>
-                    </div>
-                    <div>
                       <dt>コーヒーソーダ</dt>
                       <dd>&yen;400</dd>
                     </div>
                   </dl>
                 </div>
                 ※値段は全て税込価格です。<br />
-                ※ボードゲーム利用で2杯目以降200円引き（ドリップコーヒーを除く）
             </div>
           </CSSTransition>
 
@@ -209,7 +192,7 @@ const Shacre: NextPage = () => {
                   </div>
                 </div>
                 <div>
-                  ※カフェで1000円以上利用で1時間無料追加<br />
+                  ※カフェで1000円以上利用で30分無料追加<br />
                 </div>
               </div>
 
@@ -262,7 +245,7 @@ const Shacre: NextPage = () => {
               <div className='shop_info_title'>営業時間</div>
               <div className='shop_info_contents'>
                 <div className='left_text'>
-                  カフェ　　　：11:00~22:00（L.O. 21:00）<br />
+                  カフェ　　　：11:00~21:00（L.O. 20:00）<br />
                   ボードゲーム：11:00~22:00
                 </div>
               </div>
