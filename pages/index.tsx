@@ -16,6 +16,12 @@ const Shacre: NextPage = () => {
       <Head>
         <title>シャ：クレ</title>
         <meta name="google-site-verification" content="FzxFzCFymJkcbBfAhEFwGzvhPkTpqD26WOSfHNZtW88" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@sha_cre_cafe" />
+        <meta name="twitter:domain" content="shacre.net" />
+        <meta name="twitter:title" content="シャ：クレ - 公式ページ" />
+        <meta name="twitter:description" content="「シャ：クレ」はお客様がコーヒーを飲みに来て、お店で初めて会った人と気軽にボードゲームで遊んでいく。そんな雰囲気を目指しております。もちろん、ご家族やカップル、学校の同級生等でのご来店も大歓迎です。まずはコーヒーだけでもいかがでしょうか？" />
+        <meta name="twitter:image" content="/imgs/ogp.png" />
       </Head>
       <div className='wrapper'>
         <div className='title'>
