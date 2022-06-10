@@ -170,17 +170,17 @@ const Shacre: NextPage = () => {
                     <div className='card_title'>基本</div>
                     <div className='card_contents'>
                       場所代　: ¥300<br />
-                      ３０分毎: ¥200
+                      １０分毎: ¥100
                     </div>
                     <div className='card_sub'>
-                      ※LINE会員の方は場所代0円<br />
+                      
                     </div>
                   </div>
                   <div className='card'>
                     <div className='card_title'>パック(1人)</div>
                     <div className='card_contents'>
-                      ３時間まで: ¥1,000<br />
-                      ７時間まで: ¥2,000<br />
+                      ３時間まで: ¥1,200<br />
+                      12時間まで: ¥2,500<br />
                     </div>
                     <div className='card_sub'>
                       ※自動で適用されます。
@@ -188,17 +188,22 @@ const Shacre: NextPage = () => {
                   </div>
                 </div>
                 <div>
+                  ※LINE会員の方は場所代0円<br />
                   ※カフェで1000円以上利用で30分無料追加<br />
+                  ※フリードリンク料金込み<br />
                 </div>
               </div>
 
-              {/* ボードゲーム一覧 */}
+              {/* 取り扱いボードゲーム一覧 */}
               <div>
-                <div className='contents_title'>ボードゲーム一覧</div>
+                <div className='contents_title'>取り扱いボードゲーム一覧</div>
                 <div className='board_game_list_wrapper'>
                   <iframe className='board_game_list' src="https://bodoge.hoobby.net/spaces/sha_cre_cafe/embedded/games?q[order_type]=created_desc&image_size=normal&font_size=normal&icon_recommend=show&icon_new=show&name_en=show&myboardgame=show&staff_text=show&user_id=54976">
                   </iframe>
                   <a href="https://bodoge.hoobby.net/spaces/sha_cre_cafe/games" target="_blank">ボドゲーマで見る</a>
+                </div>
+                  <div>
+                  ※ボードゲームは毎回頑張って運んでいるので、希望のゲーム等あれば予約時にお伝えください！<br />
                 </div>
               </div>
 
