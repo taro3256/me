@@ -166,6 +166,16 @@ const Shacre: NextPage = () => {
                   LINEやInstagramで連絡していただければ、正確な席状況をお伝えできます。<br />
                   また、席数が少ないので、ご来店前にLINEやInstagram等で予約していただけると確実です。<br />
                 </div>
+                <div>
+                  相席の参加・募集は以下のLINEオープンチャットにて行えます！<br />
+                  <br />
+                  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓<br />
+                  <br />
+                  <img className="open_chat_qr" src="/imgs/open_chat.JPG" alt="LINE OPENチャット QRコード" /><br />
+                  <br />
+                  オープンチャット「【シャ：クレ】ボドゲ相席・イベント募集用」<br />
+                  <a className="link" href="https://line.me/ti/g2/Pj3Tb6VoO_JH3di0Z6H-z9FES1OwFSM0eZ6aMA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">https://line.me/ti/g2/Pj3Tb6VoO_JH3di0Z6H-z9FES1OwFSM0eZ6aMA</a>
+                </div>
               </div>
 
               {/* 料金 */}
@@ -263,11 +273,11 @@ const Shacre: NextPage = () => {
               <div className='shop_info_contents'>
                 <div className='left_text'>
                   【Twitter】<br />
-                  <a className='account_link' href="https://twitter.com/sha_cre_cafe">https://twitter.com/sha_cre_cafe</a><br />
+                  <a className='link' href="https://twitter.com/sha_cre_cafe">https://twitter.com/sha_cre_cafe</a><br />
                   【Instagram】<br />
-                  <a className='account_link' href="https://www.instagram.com/sha_cre_cafe/">https://www.instagram.com/sha_cre_cafe/</a><br />
+                  <a className='link' href="https://www.instagram.com/sha_cre_cafe/">https://www.instagram.com/sha_cre_cafe/</a><br />
                   【LINE】<br />
-                  <a className='account_link' href="https://lin.ee/ejQph0V">https://lin.ee/ejQph0V</a><br />
+                  <a className='link' href="https://lin.ee/ejQph0V">https://lin.ee/ejQph0V</a><br />
                 </div>
               </div>
             </div>
@@ -387,6 +397,9 @@ const Shacre: NextPage = () => {
           text-align: right;
           background-color: #666;
         }
+        .open_chat_qr {
+          width: 50%;
+        }
         .seat_status {
           display: flex;
           justify-content: center;
@@ -432,7 +445,7 @@ const Shacre: NextPage = () => {
           text-align: left;
           padding-left: 3%;
         }
-        .account_link {
+        .link {
           color: skyblue;
         }
         .contents_title {
