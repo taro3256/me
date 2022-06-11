@@ -29,6 +29,8 @@ jobs:
      # ビルドする
      - name: Build
        run: yarn build
+    
+     - run: echo shacre.net > public/CNAME
 
     # エキスポートする
      - name: Export
