@@ -242,7 +242,7 @@ const Shacre: NextPage = () => {
               <div className='shop_info_title'>所在地</div>
               <div className='shop_info_contents'>
                 <div className='left_text'>
-                  神奈川県 小田原市 南鴨宮3-9-7<br />
+                  神奈川県 小田原市 南鴨宮3-9-17<br />
                   「風花」を間借りして営業しています。<br />
                   駐車場2台まで。
                 </div>
