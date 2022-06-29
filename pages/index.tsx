@@ -167,6 +167,10 @@ const Shacre: NextPage = () => {
                   また、席数が少ないので、ご来店前にLINEやInstagram等で予約していただけると確実です。<br />
                 </div>
                 <div>
+                  LINEもSNSも利用していないという方はこちらからご予約ください（7日前から予約可能）<br />
+                  <a href="https://select-type.com/rsv/?id=WTH-IygCuFs&c_id=239085" target="_blank" style="display:inline-block; padding:11px 50px; line-height:1.4; border-radius:4px; background-color:#0073d9; font-family:Meiryo,'Hiragino Kaku Gothic Pro','MS PGothic'; font-size:16px; text-align:center; color:#ffffff; text-decoration:none;">予約する</a>
+                </div>
+                <div>
                   相席の参加・募集は以下のLINEオープンチャットにて行えます！<br />
                   <br />
                   ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓<br />
