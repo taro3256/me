@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head';
 import { useState } from 'react'
-import { CgCoffee, CgDice6 } from "react-icons/cg"
+import { CgCoffee, CgDice6, CgExternal } from "react-icons/cg"
 import { CSSTransition } from "react-transition-group";
 
 const Shacre: NextPage = () => {
@@ -167,9 +167,7 @@ const Shacre: NextPage = () => {
                   また、席数が少ないので、ご来店前にLINEやInstagram等で予約していただけると確実です。<br />
                 </div>
                 <div>
-                  <br />
-                  <a href="https://select-type.com/rsv/?id=WTH-IygCuFs&c_id=239085" target="_blank" className="selecttype">LINEもSNSも利用していないという方はこちらからご予約ください（7日前から予約可能）</a>
-                  <br />
+                  <a href="https://select-type.com/rsv/?id=WTH-IygCuFs&c_id=239085" target="_blank" className="selecttype">LINEもSNSも利用していないという方はこちらから予約（7日前から予約可能）<CgExternal/></a>
                 </div>
                 <div>
                   相席の参加・募集は以下のLINEオープンチャットにて行えます！<br />
@@ -488,16 +486,17 @@ const Shacre: NextPage = () => {
           padding: 5px;
         }
         .selecttype {
-          display:inline-block; 
-          padding:11px 50px;
-          line-height:1.4;
-          border-radius:4px;
-          background-color:#0073d9;
-          font-family:Meiryo,'Hiragino Kaku Gothic Pro','MS PGothic';
-          font-size:16px;
-          text-align:center;
-          color:#ffffff;
-          text-decoration:none;
+          display: inline-block;
+          margin: 20px 0;
+          padding: 11px 10px;
+          line-height: 1.4;
+          border-radius: 4px;
+          background-color: skyblue;
+          font-family: Meiryo,'Hiragino Kaku Gothic Pro','MS PGothic';
+          font-size: 16px;
+          text-align: center;
+          color: #000000;
+          text-decoration: none;
         }
         @media screen and (max-width:480px) {
           .introduction {
