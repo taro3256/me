@@ -69,7 +69,7 @@ const Shacre: NextPage = () => {
                     </div>
                     <div>
                       <dt>月替わり生パスタ(200g)</dt>
-                      <dd>&yen;1100</dd>
+                      <dd>&yen;1200</dd>
                     </div>
                     <div>
                       <dt>バニラアイス</dt>
