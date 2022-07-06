@@ -64,15 +64,15 @@ const Shacre: NextPage = () => {
                   <dl className='menu'>
                     FOODS
                     <div>
-                      <dt>月替わり生パスタ</dt>
-                      <dd>&yen;900</dd>
+                      <dt>月替わり生パスタ(100g)</dt>
+                      <dd>&yen;800</dd>
+                    </div>
+                    <div>
+                      <dt>月替わり生パスタ(200g)</dt>
+                      <dd>&yen;1100</dd>
                     </div>
                     <div>
                       <dt>バニラアイス</dt>
-                      <dd>&yen;200</dd>
-                    </div>
-                    <div>
-                      <dt>コーヒーゼリー</dt>
                       <dd>&yen;200</dd>
                     </div>
                     <div>
@@ -87,23 +87,23 @@ const Shacre: NextPage = () => {
                   <dl className='menu'>
                     DRINKS
                     <div>
-                      <dt>ドリップコーヒー（フルーティ）</dt>
+                      <dt>[Hot]スペシャルティコーヒー（フルーティ）</dt>
                       <dd>&yen;500</dd>
                     </div>
                     <div>
-                      <dt>ドリップコーヒー（バランス）</dt>
+                      <dt>[Hot]スペシャルティコーヒー（ビター）</dt>
                       <dd>&yen;500</dd>
                     </div>
                     <div>
-                      <dt>ドリップコーヒー（ビター）</dt>
+                      <dt>[Ice]スペシャルティコーヒー（ビター）</dt>
+                      <dd>&yen;600</dd>
+                    </div>
+                    <div>
+                      <dt>[Hot]フレーバーティー</dt>
                       <dd>&yen;500</dd>
                     </div>
                     <div>
-                      <dt>フレーバーティー（Hot）</dt>
-                      <dd>&yen;500</dd>
-                    </div>
-                    <div>
-                      <dt>紅茶（Hot）</dt>
+                      <dt>[Hot]紅茶</dt>
                       <dd>&yen;500</dd>
                     </div>
                     <div>
@@ -123,7 +123,15 @@ const Shacre: NextPage = () => {
                       <dd>&yen;400</dd>
                     </div>
                     <div>
+                      <dt>レモネード</dt>
+                      <dd>&yen;400</dd>
+                    </div>
+                    <div>
                       <dt>カルピスソーダ</dt>
+                      <dd>&yen;400</dd>
+                    </div>
+                    <div>
+                      <dt>レモネードソーダ</dt>
                       <dd>&yen;400</dd>
                     </div>
                     <div>
