@@ -207,6 +207,7 @@ const Shacre: NextPage = () => {
                     <div className='card_title'>パック(1人)</div>
                     <div className='card_contents'>
                       ３時間まで: ¥1,200<br />
+                      ７時間まで: ¥2,000<br />
                       12時間まで: ¥2,500<br />
                     </div>
                     <div className='card_sub'>
@@ -215,7 +216,7 @@ const Shacre: NextPage = () => {
                   </div>
                 </div>
                 <div>
-                  ※LINE会員の方は場所代0円<br />
+                  ※グループにLINE会員の方がいれば場所代0円<br />
                   ※カフェで1000円以上利用で30分無料追加<br />
                   ※フリードリンク料金込み<br />
                 </div>
