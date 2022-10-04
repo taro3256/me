@@ -4,7 +4,43 @@ import { useState } from 'react'
 import { AiFillTwitterSquare, AiFillInstagram, AiOutlineEnvironment } from "react-icons/ai";
 import { CSSTransition } from "react-transition-group";
 
+const tabs = [
+    {
+        text: '仕事一覧',
+        id: 'tab_works',
+    },
+    {
+        text: '趣味',
+        id: 'tab_hobbies',
+    },
+];
+
+const contents = {
+    tab_works: <div></div>,
+};
+
 const Oshigoto: NextPage = () => {
+    const [selectedTab, setSelectedTab] = useState(tabs[0].id);
+    const tabs_html = tabs.map((tab, index) => {
+        return (
+            <div key={ index } className={ selectedTab==tab.id ? 'tab selected_tab' : 'tab' } id={ tab.id } onClick={ () => setSelectedTab(tab.id) }>
+                { tab.text }
+                <style jsx>{`
+                    .tab {
+                        flex-grow: 1;
+                        cursor: pointer;
+                        text-align: center;
+                    }
+                    .tab:hover {
+                        background: #444444;
+                    }
+                    .selected_tab {
+                        border-bottom: solid 3px #44FFFF;
+                    }
+                `}</style>
+            </div>
+        )
+    });
 
     return (
       <>
@@ -58,18 +94,7 @@ const Oshigoto: NextPage = () => {
                     </div>
                 </div>
                 <div className='content_tabs'>
-                    <div className='tab'>
-                        タブ
-                    </div>
-                    <div className='tab'>
-                        タブ
-                    </div>
-                    <div className='tab'>
-                        タブ
-                    </div>
-                    <div className='tab'>
-                        タブ
-                    </div>
+                    { tabs_html }
                 </div>
                 <div className='tab_contents'>
                     <div className='tab_content'>
@@ -101,8 +126,8 @@ const Oshigoto: NextPage = () => {
             .contents {
                 max-width: 600px;
                 width: 100%;
-                border-right: solid 1px #dddddd;
-                border-left: solid 1px #dddddd;
+                border-right: solid 1px #888888;
+                border-left: solid 1px #888888;
             }
             .wrapper_content_title {
                 position: sticky;
@@ -187,19 +212,16 @@ const Oshigoto: NextPage = () => {
             .content_tabs {
                 display: flex;
                 justify-content: space-around;
-            }
-            .tab {
-                border: solid 1px white;
-                width: 100%;
-                text-align: center;
-                background: #aaaa00;
+                height: 32px;
+                border-bottom: solid 1px #888888;
             }
             .tab_contents {
-                background: #00aaaa;
+                
             }
             .tab_content {
                 height: 100px;
-                background: #aa00aa;
+                border-bottom: solid 1px #888888;
+                padding: 0 16px;
             }
         `}</style>
       </>
