@@ -148,7 +148,7 @@ const Oshigoto: NextPage = () => {
                             <div className='tab_content_title'>飲食提供</div>
                             <div className='tab_content_body'>
                                 <div className='tab_content_body_text'>
-                                    Webサイト・アプリケーションの構築（サーバー、言語選定、コーディング）ができます。<br />
+                                    スペシャルティコーヒー・イタリアン等のフードを提供できます。<br />
                                 </div>
                                 <div className='tab_content_body_img'>
                                     <img src="/imgs/work_coffee.jpg" alt="飲食提供" />
