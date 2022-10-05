@@ -13,11 +13,11 @@ const tabs = [
         text: '趣味',
         id: 'tab_hobbies',
     },
+    {
+        text: 'イベント',
+        id: 'tab_events',
+    },
 ];
-
-const contents = {
-    tab_works: <div></div>,
-};
 
 const Oshigoto: NextPage = () => {
     const [selectedTab, setSelectedTab] = useState(tabs[0].id);
@@ -96,23 +96,211 @@ const Oshigoto: NextPage = () => {
                 <div className='content_tabs'>
                     { tabs_html }
                 </div>
-                <div className='tab_contents'>
-                    <div className='tab_content'>
-                        aaaa
+                {
+                    selectedTab == 'tab_works'
+                    &&
+                    <div className='tab_contents'>
+                        <div className='tab_content'>
+                            <div className='tab_content_title'>Webサイト・アプリケーション開発</div>
+                            <div className='tab_content_body'>
+                                <div className='tab_content_body_text'>
+                                    Webサイト・アプリケーションの相談・構築（サーバー、言語選定、コーディング）ができます。<br />
+                                </div>
+                                <div className='tab_content_body_img'>
+                                    <img src="/imgs/work_webdev.jpg" alt="Webサイト・アプリケーション開発" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='tab_content'>
+                            <div className='tab_content_title'>自動化ツール作成</div>
+                            <div className='tab_content_body'>
+                                <div className='tab_content_body_text'>
+                                    Web操作や、事務作業の自動化（RPA）の相談・コーディングができます。
+                                </div>
+                                <div className='tab_content_body_img'>
+                                    <img src="/imgs/work_rpa.jpg" alt="自動化ツール作成" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='tab_content'>
+                            <div className='tab_content_title'>Webマーケティング・広告運用</div>
+                            <div className='tab_content_body'>
+                                <div className='tab_content_body_text'>
+                                    アナリティクス分析や、SEOや広告運用などのWebマーケティングの基本的な相談や、リスティング広告やディスプレイ広告の運用代行も可能です。<br />
+                                </div>
+                                <div className='tab_content_body_img'>
+                                    <img src="/imgs/work_marketing.jpg" alt="Webマーケティング・広告運用" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='tab_content'>
+                            <div className='tab_content_title'>ボードゲーム企画・イベント運営</div>
+                            <div className='tab_content_body'>
+                                <div className='tab_content_body_text'>
+                                    ボードゲームを用いた知育、懇親会、コミュニティ構築等様々な目的に沿ったイベントの企画・運営ができます。
+                                </div>
+                                <div className='tab_content_body_img'>
+                                    <img src="/imgs/work_bg.png" alt="ボードゲーム企画・イベント運営" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='tab_content'>
+                            <div className='tab_content_title'>飲食提供</div>
+                            <div className='tab_content_body'>
+                                <div className='tab_content_body_text'>
+                                    Webサイト・アプリケーションの構築（サーバー、言語選定、コーディング）ができます。<br />
+                                </div>
+                                <div className='tab_content_body_img'>
+                                    <img src="/imgs/work_coffee.jpg" alt="飲食提供" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className='tab_content'>
-                        aaaa
+                }
+                {
+                    selectedTab == 'tab_hobbies'
+                    &&
+                    <div className='tab_contents'>
+                        <div className='tab_content'>
+                            <div className='tab_content_title'>珈琲</div>
+                            <div className='tab_content_body'>
+                                <div className='tab_content_body_text'>
+                                    珈琲よく飲むよ！
+                                </div>
+                                <div className='tab_content_body_img'>
+                                    <img src="" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='tab_content'>
+                            <div className='tab_content_title'>ワイン</div>
+                            <div className='tab_content_body'>
+                                <div className='tab_content_body_text'>
+                                    ワインよく飲むよ！
+                                </div>
+                                <div className='tab_content_body_img'>
+                                    <img src="" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='tab_content'>
+                            <div className='tab_content_title'>コース料理</div>
+                            <div className='tab_content_body'>
+                                <div className='tab_content_body_text'>
+                                    コース料理よくいくよ！
+                                </div>
+                                <div className='tab_content_body_img'>
+                                    <img src="" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='tab_content'>
+                            <div className='tab_content_title'>ボードゲーム</div>
+                            <div className='tab_content_body'>
+                                <div className='tab_content_body_text'>
+                                    ボードゲームよくやるよ！
+                                </div>
+                                <div className='tab_content_body_img'>
+                                    <img src="" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='tab_content'>
+                            <div className='tab_content_title'>カラオケ</div>
+                            <div className='tab_content_body'>
+                                <div className='tab_content_body_text'>
+                                    カラオケよくいくよ！
+                                </div>
+                                <div className='tab_content_body_img'>
+                                    <img src="" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='tab_content'>
+                            <div className='tab_content_title'>旅行</div>
+                            <div className='tab_content_body'>
+                                <div className='tab_content_body_text'>
+                                    旅行好きだよ！
+                                </div>
+                                <div className='tab_content_body_img'>
+                                    <img src="" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='tab_content'>
+                            <div className='tab_content_title'>ピアノ</div>
+                            <div className='tab_content_body'>
+                                <div className='tab_content_body_text'>
+                                    教室通ってるよ！
+                                </div>
+                                <div className='tab_content_body_img'>
+                                    <img src="" alt="" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className='tab_content'>
-                        aaaa
+                }
+                {
+                    selectedTab == 'tab_events'
+                    &&
+                    <div className='tab_contents'>
+                        <div className='tab_content'>
+                            <div className='tab_content_title'>小田急親子ワーケーション with ボードゲーム</div>
+                            <div className='tab_content_body'>
+                                <div className='tab_content_body_text'>
+                                    企画内容
+                                </div>
+                                <div className='tab_content_body_img'>
+                                    <img src="" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='tab_content'>
+                            <div className='tab_content_title'>湘南ベルマーレホームゲーム ボドゲ体験会出店</div>
+                            <div className='tab_content_body'>
+                                <div className='tab_content_body_text'>
+                                    企画内容
+                                </div>
+                                <div className='tab_content_body_img'>
+                                    <img src="" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='tab_content'>
+                            <div className='tab_content_title'>英会話ボードゲーム会</div>
+                            <div className='tab_content_body'>
+                                <div className='tab_content_body_text'>
+                                    企画内容
+                                </div>
+                                <div className='tab_content_body_img'>
+                                    <img src="" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='tab_content'>
+                            <div className='tab_content_title'>eemoカーシェア0期アンバサダー</div>
+                            <div className='tab_content_body'>
+                                <div className='tab_content_body_text'>
+                                    内容
+                                </div>
+                                <div className='tab_content_body_img'>
+                                    <img src="" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='tab_content'>
+                            <div className='tab_content_title'>ボードゲームカフェ SHA:CREオープン</div>
+                            <div className='tab_content_body'>
+                                <div className='tab_content_body_text'>
+                                    内容
+                                </div>
+                                <div className='tab_content_body_img'>
+                                    <img src="" alt="" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className='tab_content'>
-                        aaaa
-                    </div>
-                    <div className='tab_content'>
-                        aaaa
-                    </div>
-                </div>
+                }
             </div>
         </div>
 
@@ -208,6 +396,7 @@ const Oshigoto: NextPage = () => {
             .profile_footer {
                 font-size: 12px;
                 margin-bottom: 16px;
+                color: #aaaaaa;
             }
             .content_tabs {
                 display: flex;
@@ -215,13 +404,25 @@ const Oshigoto: NextPage = () => {
                 height: 32px;
                 border-bottom: solid 1px #888888;
             }
-            .tab_contents {
-                
-            }
             .tab_content {
-                height: 100px;
                 border-bottom: solid 1px #888888;
-                padding: 0 16px;
+                padding: 8px 16px;
+            }
+            .tab_content_body {
+                font-size: 12px;
+            }
+            .tab_content_body_text {
+                padding: 8px 0;
+            }
+            .tab_content_body_img {
+                max-width: 300px;
+                max-height: 300px;
+            }
+            .tab_content_body_img > img {
+                width: 100%;
+                height: 100%;
+                border-radius: 5%;
+                object-fit: cover;
             }
         `}</style>
       </>
