@@ -66,7 +66,7 @@ const Oshigoto: NextPage = () => {
                 </div>
                 <div>
                     <div className='content_icon'>
-                        <img src="/imgs/prof_icon.jpg" alt="アイコン画像" className='content_icon_img'/>
+                        <img src="/imgs/prof_icon.png" alt="アイコン画像" className='content_icon_img'/>
                     </div>
                     <div className='content_sns_icons'>
                         <a href="https://twitter.com/talo_cof" className='sns_icon sns_icon_twitter' target='_blank'>
