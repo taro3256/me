@@ -58,7 +58,7 @@ const Oshigoto: NextPage = () => {
             <div className='contents'>
                 <div className='wrapper_content_title'>
                     <div className='content_title'>
-                        OSHIGOTO
+                        OSHIGOTO（作成中）
                     </div>
                 </div>
                 <div className='wrapper_content_header_img'>
